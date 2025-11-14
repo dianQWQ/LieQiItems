@@ -4,6 +4,7 @@ import com.lieqiitems.Item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.TagKey;
 
 public class LieQiMaterial implements ToolMaterial {
@@ -24,7 +25,7 @@ public class LieQiMaterial implements ToolMaterial {
 
     @Override
     public TagKey<Block> getInverseTag() {
-        return null;
+        return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
     }
 
     @Override

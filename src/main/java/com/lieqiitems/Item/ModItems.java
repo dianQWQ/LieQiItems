@@ -30,11 +30,60 @@ public class ModItems {
     //物品
     public static final Item LIEQI = register("lieqi", new Item(new Item.Settings().maxCount(16)));
     public static final Item LIEQI_INGOT = register("lieqi_ingot", new Item(new Item.Settings()));
-    public static final Item LIEQI_SWORD = register("lieqi_sword", new SwordItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 4, -4f))));
-    public static final Item LIEQI_AXE = register("lieqi_axe", new AxeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 6, -4f))));
-    public static final Item LIEQI_HOE = register("lieqi_hoe", new HoeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 0, -2f))));
-    public static final Item LIEQI_PICKAXE = register("lieqi_pickaxe", new PickaxeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 2, -3f))));
-    public static final Item LIEQI_SHOVEL = register("lieqi_shovel", new ShovelItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 1, -2f))));
+
+    public static final Item LIEQI_SWORD = register(
+            "lieqi_sword",
+            new SwordItem(
+                    LieQiMaterial.INSTANCE,
+                    new Item.Settings().attributeModifiers(SwordItem
+                            .createAttributeModifiers(
+                                    LieQiMaterial.INSTANCE, 3, -3.0f
+                            )
+                    )
+            )
+    );
+
+    public static final Item LIEQI_AXE = register(
+            "lieqi_axe",
+            new AxeItem(LieQiMaterial.INSTANCE,
+                    new Item.Settings().attributeModifiers(AxeItem
+                            .createAttributeModifiers(
+                                    LieQiMaterial.INSTANCE, 6, -2f
+                            )
+                    )
+            )
+    );
+    public static final Item LIEQI_HOE = register(
+            "lieqi_hoe",
+            new HoeItem(LieQiMaterial.INSTANCE,
+                    new Item.Settings()
+                            .attributeModifiers(HoeItem.createAttributeModifiers(
+                                    LieQiMaterial.INSTANCE, -4, -2.5f
+                            )
+                            )
+            )
+    );
+    public static final Item LIEQI_PICKAXE = register(
+            "lieqi_pickaxe",
+            new PickaxeItem(LieQiMaterial.INSTANCE,
+                    new Item.Settings().attributeModifiers(PickaxeItem
+                            .createAttributeModifiers(
+                                    LieQiMaterial.INSTANCE, -1, -2.5f
+                            )
+                    )
+            )
+    );
+
+    public static final Item LIEQI_SHOVEL = register(
+            "lieqi_shovel",
+            new ShovelItem(LieQiMaterial.INSTANCE,
+                    new Item.Settings().attributeModifiers(
+                            ShovelItem.createAttributeModifiers(
+                                    LieQiMaterial.INSTANCE, -2, -2.5f
+                            )
+                    )
+            )
+    );
 
     public static final Item LIEQI_BREAD = register(
             "lieqi_bread", new Item(new Item.Settings()
@@ -50,6 +99,9 @@ public class ModItems {
                     )
             )
     );
+
+
+
     //注册物品
     private static Item register(String id, Item item) {
         return register(id, item, true);
