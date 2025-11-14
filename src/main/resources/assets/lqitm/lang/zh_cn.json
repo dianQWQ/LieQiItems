@@ -1,4 +1,12 @@
 {
+    "itemGroup.lqitm": "猎奇物品",
     "item.lqitm.lieqi": "猎奇",
-    "itemGroup.lqitm": "猎奇物品"
+    "item.lqitm.lieqi_ingot": "猎奇锭",
+    "item.lqitm.lieqi_bread": "猎奇面包",
+    "item.lqitm.lieqi_sword": "猎奇剑",
+    "item.lqitm.lieqi_axe": "猎奇斧🪓",
+    "item.lqitm.lieqi_pickaxe": "猎奇镐",
+    "item.lqitm.lieqi_hoe": "猎奇锄",
+    "item.lqitm.lieqi_shovel": "猎奇锹"
+
 }

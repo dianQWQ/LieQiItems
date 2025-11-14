@@ -1,12 +1,14 @@
 package com.lieqiitems.Item;
 
+import com.lieqiitems.Item.Tools.LieQiMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -27,7 +29,27 @@ public class ModItems {
 
     //物品
     public static final Item LIEQI = register("lieqi", new Item(new Item.Settings().maxCount(16)));
+    public static final Item LIEQI_INGOT = register("lieqi_ingot", new Item(new Item.Settings()));
+    public static final Item LIEQI_SWORD = register("lieqi_sword", new SwordItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 4, -4f))));
+    public static final Item LIEQI_AXE = register("lieqi_axe", new AxeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 6, -4f))));
+    public static final Item LIEQI_HOE = register("lieqi_hoe", new HoeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 0, -2f))));
+    public static final Item LIEQI_PICKAXE = register("lieqi_pickaxe", new PickaxeItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 2, -3f))));
+    public static final Item LIEQI_SHOVEL = register("lieqi_shovel", new ShovelItem(LieQiMaterial.INSTANCE, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(LieQiMaterial.INSTANCE, 1, -2f))));
 
+    public static final Item LIEQI_BREAD = register(
+            "lieqi_bread", new Item(new Item.Settings()
+                    .food(new FoodComponent.Builder()
+                            .nutrition(5)
+                            .saturationModifier(10)
+                            .alwaysEdible()
+                            .statusEffect(new StatusEffectInstance(StatusEffects.STRENGTH, 30 * 20, 10), 0.9f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 15 * 20, 3), 0.1f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST,10*20,255),0.05f)
+                            .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE,1,255),0.001f)
+                            .build()
+                    )
+            )
+    );
     //注册物品
     private static Item register(String id, Item item) {
         return register(id, item, true);
@@ -49,9 +71,10 @@ public class ModItems {
     //添加额外属性
     private static void addExtraProperties() {
         //作为燃料
-        FuelRegistry.INSTANCE.add(LIEQI, 30 * 20);
+        FuelRegistry.INSTANCE.add(LIEQI, 10 * 200);
         //堆肥
-        CompostingChanceRegistry.INSTANCE.add(LIEQI, 20f);
+        CompostingChanceRegistry.INSTANCE.add(LIEQI, 1600f);
+        CompostingChanceRegistry.INSTANCE.add(LIEQI_BREAD, 20f);
     }
     public static void initialize() {
         //添加额外属性
