@@ -3,13 +3,13 @@
 	"id": "lqitm",
 	"version": "${version}",
 	"name": "Lie Qi Items",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "添加了各种猎奇模组",
 	"authors": [
-		"Me!"
+		"dianQWQ"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/dianQWQ/LieQiItems",
+		"sources": "https://github.com/dianQWQ/LieQiItems"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/lqitm/icon.png",
