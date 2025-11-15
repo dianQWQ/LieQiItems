@@ -1,10 +1,9 @@
 package com.lieqiitems.block;
 
-import com.lieqiitems.Item.ModItems;
+import com.lieqiitems.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;

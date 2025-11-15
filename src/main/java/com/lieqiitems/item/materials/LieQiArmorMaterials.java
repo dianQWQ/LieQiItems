@@ -1,4 +1,4 @@
-package com.lieqiitems.Item.Materials;
+package com.lieqiitems.item.materials;
 
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;

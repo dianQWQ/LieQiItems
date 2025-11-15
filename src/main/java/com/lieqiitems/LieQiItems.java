@@ -1,7 +1,7 @@
 package com.lieqiitems;
 
-import com.lieqiitems.Item.Materials.LieQiArmorMaterials;
-import com.lieqiitems.Item.ModItems;
+import com.lieqiitems.item.materials.LieQiArmorMaterials;
+import com.lieqiitems.item.ModItems;
 import com.lieqiitems.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 

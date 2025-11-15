@@ -10,5 +10,10 @@
     "item.lqitm.lieqi_shovel": "Lie Qi Shovel",
     "item.lqitm.lieqi_wtf": "WHAT THE HELL IS THIS?",
     "item.lqitm.pure_lieqi": "Pure Lie Qi",
-    "block.lqitm.lieqi_block": "Lie Qi Block"
+    "block.lqitm.lieqi_block": "Lie Qi Block",
+    "item.lqitm.lieqi_staff": "Lie Qi Staff",
+    "item.lqitm.lieqi_staff_plus": "Lie Qi Staff Plus",
+    "item.lqitm.lieqi_core": "Lie Qi Core",
+    "itemTooltip.lqitm.lieqi_staff": "Harness the power of Lie Qi!",
+    "itemTooltip.lqitm.lieqi":"The Origin Of Everything"
 }

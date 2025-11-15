@@ -1,6 +1,9 @@
-package com.lieqiitems.Item;
+package com.lieqiitems.item;
 
-import com.lieqiitems.Item.Materials.LieQiMaterial;
+import com.lieqiitems.item.items.LieQi;
+import com.lieqiitems.item.items.LieQiStaff;
+import com.lieqiitems.item.items.LieQiStaffPlus;
+import com.lieqiitems.item.materials.LieQiMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -28,7 +31,7 @@ public class ModItems {
     public static final ItemGroup LIE_QI_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP, LIEQI_ITEM_GROUP_KEY, LIE_QI_ITEM_GROUP_ENTITY);
 
     //物品
-    public static final Item LIEQI = register("lieqi", new Item(new Item.Settings().maxCount(16)));
+    public static final LieQi LIEQI = register("lieqi", new LieQi(new Item.Settings().maxCount(16)));
     public static final Item LIEQI_INGOT = register("lieqi_ingot", new Item(new Item.Settings()));
     public static final Item PURE_LIEQI = register("pure_lieqi", new Item(new Item.Settings()));
     public static final Item LIEQI_WTF = register("lieqi_wtf", new Item(new Item.Settings()),false);
@@ -102,16 +105,18 @@ public class ModItems {
             )
     );
 
-
+    public static final Item LIEQI_CORE = register("lieqi_core", new Item(new Item.Settings()));
+    public static final LieQiStaff LIEQI_STAFF = register("lieqi_staff", new LieQiStaff(new Item.Settings()));
+    public static final LieQiStaffPlus LIEQI_STAFF_PLUS = register("lieqi_staff_plus", new LieQiStaffPlus(new Item.Settings()));
 
     //注册物品
-    private static Item register(String id, Item item) {
+    private static <T extends Item> T register(String id, T item) {
         return register(id, item, true);
     }
-    private static Item register(String id, Item item, boolean putInToItemGroup){
+    private static <T extends Item> T register(String id, T item, boolean putInToItemGroup){
         Identifier itemID = Identifier.of(MOD_ID,id);
 
-        Item registeredItem = Registry.register(Registries.ITEM, itemID, item);
+        T registeredItem = Registry.register(Registries.ITEM, itemID, item);
 
         if (putInToItemGroup) {
             //自动放入物品组

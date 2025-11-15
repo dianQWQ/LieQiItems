@@ -10,5 +10,10 @@
     "item.lqitm.lieqi_shovel": "猎奇锹",
     "item.lqitm.lieqi_wtf": "这是什么鬼?",
     "item.lqitm.pure_lieqi": "纯猎奇",
-    "block.lqitm.lieqi_block": "猎奇块"
+    "block.lqitm.lieqi_block": "猎奇块",
+    "item.lqitm.lieqi_staff": "猎奇之杖",
+    "item.lqitm.lieqi_staff_plus": "猎奇之杖Plus",
+    "item.lqitm.lieqi_core": "猎奇核心",
+    "itemTooltip.lqitm.lieqi_staff": "使用猎奇的力量!",
+    "itemTooltip.lqitm.lieqi":"一切的起源"
 }

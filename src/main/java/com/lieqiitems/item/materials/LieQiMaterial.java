@@ -1,6 +1,6 @@
-package com.lieqiitems.Item.Materials;
+package com.lieqiitems.item.materials;
 
-import com.lieqiitems.Item.ModItems;
+import com.lieqiitems.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
