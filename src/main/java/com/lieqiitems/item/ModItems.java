@@ -106,8 +106,8 @@ public class ModItems {
     );
 
     public static final Item LIEQI_CORE = register("lieqi_core", new Item(new Item.Settings()));
-    public static final LieQiStaff LIEQI_STAFF = register("lieqi_staff", new LieQiStaff(new Item.Settings()));
-    public static final LieQiStaffPlus LIEQI_STAFF_PLUS = register("lieqi_staff_plus", new LieQiStaffPlus(new Item.Settings()));
+    public static final LieQiStaff LIEQI_STAFF = register("lieqi_staff", new LieQiStaff(new Item.Settings().maxCount(1)));
+    public static final LieQiStaffPlus LIEQI_STAFF_PLUS = register("lieqi_staff_plus", new LieQiStaffPlus(new Item.Settings().maxCount(1)));
 
     //注册物品
     private static <T extends Item> T register(String id, T item) {
