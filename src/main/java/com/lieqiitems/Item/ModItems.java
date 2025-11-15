@@ -1,6 +1,6 @@
 package com.lieqiitems.Item;
 
-import com.lieqiitems.Item.Material.LieQiMaterial;
+import com.lieqiitems.Item.Materials.LieQiMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;

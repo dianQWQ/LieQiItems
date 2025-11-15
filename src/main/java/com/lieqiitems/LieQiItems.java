@@ -1,5 +1,6 @@
 package com.lieqiitems;
 
+import com.lieqiitems.Item.Materials.LieQiArmorMaterials;
 import com.lieqiitems.Item.ModItems;
 import com.lieqiitems.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
@@ -22,6 +23,8 @@ public class LieQiItems implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("\uD83D\uDC80----- Lie Qi Items ! -----\uD83D\uDC80");
+
+        LieQiArmorMaterials.initialize();
         ModItems.initialize();
         ModBlocks.initialize();
 	}
