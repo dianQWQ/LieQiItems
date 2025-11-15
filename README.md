@@ -3,7 +3,7 @@
 
 ## 添加了许多 猎奇♂ 物品!
 
-**猎奇**,**猎奇**矿,**猎奇**块,**猎奇**剑,**猎奇**盔甲......
+**猎奇**,**猎奇**矿,**猎奇**块,**猎奇**剑,**猎奇**法杖......
 
 <img alt="猎奇物品" height="150" src="./src/main/resources/assets/lqitm/icon.png" title="Lie Qi Items" width="150"/>
 

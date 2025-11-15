@@ -34,7 +34,7 @@ public class ModItems {
     public static final LieQi LIEQI = register("lieqi", new LieQi(new Item.Settings().maxCount(16)));
     public static final Item LIEQI_INGOT = register("lieqi_ingot", new Item(new Item.Settings()));
     public static final Item PURE_LIEQI = register("pure_lieqi", new Item(new Item.Settings()));
-    public static final Item LIEQI_WTF = register("lieqi_wtf", new Item(new Item.Settings()),false);
+//    public static final Item LIEQI_WTF = register("lieqi_wtf", new Item(new Item.Settings()),false);
 
     public static final Item LIEQI_SWORD = register(
             "lieqi_sword",
