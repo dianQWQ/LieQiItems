@@ -7,6 +7,8 @@
     "item.lqitm.lieqi_axe": "猎奇斧",
     "item.lqitm.lieqi_pickaxe": "猎奇镐",
     "item.lqitm.lieqi_hoe": "猎奇锄",
-    "item.lqitm.lieqi_shovel": "猎奇锹"
-
+    "item.lqitm.lieqi_shovel": "猎奇锹",
+    "item.lqitm.lieqi_wtf": "这是什么鬼?",
+    "item.lqitm.pure_lieqi": "纯猎奇",
+    "block.lqitm.lieqi_block": "猎奇块"
 }

@@ -1,6 +1,7 @@
 package com.lieqiitems;
 
 import com.lieqiitems.Item.ModItems;
+import com.lieqiitems.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -20,7 +21,8 @@ public class LieQiItems implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("This is Lie Qi Items !");
+		LOGGER.info("\uD83D\uDC80----- Lie Qi Items ! -----\uD83D\uDC80");
         ModItems.initialize();
+        ModBlocks.initialize();
 	}
 }

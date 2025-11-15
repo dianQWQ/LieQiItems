@@ -2,14 +2,14 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "lqitm:pure_lieqi"
+            "item": "lqitm:lieqi"
         },
         {
-            "item": "minecraft:iron_ingot"
+            "item": "minecraft:dirt"
         }
     ],
     "result": {
-        "id": "lqitm:lieqi_ingot",
-        "count": 1
+        "id": "lqitm:lieqi_block",
+        "count": 4
     }
 }

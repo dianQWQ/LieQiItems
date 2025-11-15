@@ -1,6 +1,6 @@
 package com.lieqiitems.Item;
 
-import com.lieqiitems.Item.Tools.LieQiMaterial;
+import com.lieqiitems.Item.Material.LieQiMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
@@ -30,6 +30,8 @@ public class ModItems {
     //物品
     public static final Item LIEQI = register("lieqi", new Item(new Item.Settings().maxCount(16)));
     public static final Item LIEQI_INGOT = register("lieqi_ingot", new Item(new Item.Settings()));
+    public static final Item PURE_LIEQI = register("pure_lieqi", new Item(new Item.Settings()));
+    public static final Item LIEQI_WTF = register("lieqi_wtf", new Item(new Item.Settings()),false);
 
     public static final Item LIEQI_SWORD = register(
             "lieqi_sword",

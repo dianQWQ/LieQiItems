@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " # ",
+        " # ",
+        "# #"
+    ],
+    "key": {
+        "#": {
+            "item": "lqitm:lieqi_ingot"
+        }
+    },
+    "result": {
+        "id": "lqitm:lieqi_wtf",
+        "count": 1
+    }
+}

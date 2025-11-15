@@ -1,4 +1,4 @@
-package com.lieqiitems.Item.Tools;
+package com.lieqiitems.Item.Material;
 
 import com.lieqiitems.Item.ModItems;
 import net.minecraft.block.Block;
